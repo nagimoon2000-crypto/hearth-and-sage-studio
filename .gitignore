@@ -1,0 +1,4 @@
+node_modules/
+private/
+test-results/
+*.local.json

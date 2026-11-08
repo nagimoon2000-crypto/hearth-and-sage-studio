@@ -1,6 +1,6 @@
 # Growth execution plan — Hearth & Sage game assets
 
-> Status: first Cozy Café collection is presented as preparing for Unity Asset Store review. Do not imply approved marketplace listings, downloadable packages or sales unless independently verified.
+> Dated evidence: on 2026-11-03 Cozy Café and Mini Planet showed Approved in Fab (manual publication), and Pending in Unity. Public checkouts remain unverified; no Buy or sample download is enabled. See [implementation and deployment notes](GROWTH_IMPLEMENTATION.md). Do not imply sales without official transaction evidence.
 
 ## Offer: ship usable game props, not pretty renders
 **Audience:** indie Unity/Unreal developers building cozy café, shop or life-sim scenes.
@@ -26,13 +26,18 @@ Site `collection_view` → `sample_download` (real file only) → `marketplace_c
 Measure actual product-page impressions, downloads, sales, refunds, feedback, ratings (where platform supplies them). Never fake showcase screenshots or testimonials.
 
 ## Codex implementation backlog
-- [ ] Verify actual deliverables, supported engine builds and product status.
-- [ ] Change only accurate call-to-action copy and add a clear "available / preparing for review" status.
+- [x] Verify actual deliverables, supported engine builds and dated product status.
+- [x] Change only accurate call-to-action copy and add a clear publication/readiness status.
 - [ ] Add a download link **only** when a tested license-cleared sample ZIP exists.
-- [ ] Add UTM-tagged outbound marketplace links only when real listings are approved.
+- [x] Gate UTM-tagged outbound marketplace links on verified PUBLIC publication (approval alone is insufficient); currently disabled.
 - [ ] Add privacy-safe analytics and verify events against real clicks.
 - [ ] Add simple automated checks for broken images, broken internal links and mobile layout.
-- [ ] Record product/license/AI-assisted content disclosures according to marketplace policy.
+- [x] Record existing product/license/AI-assisted content disclosures and tested compatibility limits.
+
+Code and automated checks are implemented for opt-in behavior/UTM events and
+statement-backed money reconciliation. Actual browser/mobile click QA is pending
+because local browser control was disabled. A public sample and a production
+event collector are intentionally not claimed or enabled. See GROWTH_IMPLEMENTATION.md.
 
 ## 14-day validation
 Week 1: compare 10 competing asset packs and 3 common indie dev scenarios; choose a differentiated micro-scene.
