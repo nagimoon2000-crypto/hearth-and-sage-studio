@@ -1,0 +1,11 @@
+{
+  "name": "hearth-and-sage-studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "check": "node scripts/check-site.mjs",
+    "preview": "node scripts/preview.mjs",
+    "report:growth": "node scripts/report-growth.mjs"
+  }
+}
